@@ -1,0 +1,216 @@
+
+body, html {
+    height: 100%;
+	margin:0;
+    padding:0;
+}
+.parallax { background-image:url(s2.jpg);
+	  height:100%;
+      background-attachment: fixed;
+     background-position: bottom, top;
+     background-repeat:no-repeat;
+     background-size: cover;
+ }
+.parallax1 { background-image:url(s1.jpg);
+     	  height:100%;
+      background-attachment: fixed;
+     background-position: bottom, top;
+     background-repeat:no-repeat;
+     background-size: cover;
+	 }
+ .parallax2 { background-image:url(l1.jpg);
+     	  height:100%;
+      background-attachment: fixed;
+     background-position: bottom, top;
+     background-repeat:no-repeat;
+     background-size: cover;
+	 }
+
+ .button-8{
+  width:140px;
+  height:50px;
+  border:2px solid #34495e;
+  float:left;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 50px;
+}
+.button-8 a{
+  font-family:arial;
+  font-size:16px;
+  color:#fff;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .5s ease;
+  z-index:2;
+  position:relative;
+}
+.eff-8{
+  width:140px;
+  height:50px;
+  border:70px solid #34495e;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+  box-sizing:border-box;
+}
+.button-8:hover .eff-8{
+  border:0px solid #34495e;
+}
+.button-8:hover a{
+  color:#34495e;
+}
+ ul {
+    height:58px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+li {
+    float: right;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+li a:hover:not(.active) {
+    background-color: blue;
+}
+
+.active {
+    background-color: pink;
+}
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+ animation-name: anim-1;
+}
+
+.item-2{
+ animation-name: anim-2;
+}
+
+.item-3{
+ animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+ 0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+   100% { left: -110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+ 0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+ 100% { left: -110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+ 0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: -110%; opacity: 0; }
+}
+.container:hover .title {
+  top: 90px;
+}
+
+.button {
+  position: absolute;
+  width: 500px;
+  left:0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: pink;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.con:hover .button {
+  opacity: 1;
+  margin:0;
+}
+.button1 { position:absolute;
+  width: 500px;
+  left:0;
+  top: 100px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button1 a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: pink;
+  border: solid 2px white;
+  z-index: 1;
+}
+
+.con:hover .button1 {
+  opacity: 1;
+}
